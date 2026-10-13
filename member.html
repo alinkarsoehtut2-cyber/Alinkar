@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Member Area | DoBu Martial Arts</title>
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body><a class="skip" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="container nav"><a class="brand" href="index.html"><span class="mark">DB</span><span>DoBu
+                    <small>MARTIAL ARTS</small></span></a>
+            <nav class="links" id="navLinks"><a href="index.html">Home</a><a href="training.html">Training</a><a
+                    href="timetable.html">Timetable</a><a href="membership.html">Membership</a><a href="gym.html">Our
+                    gym</a><a href="community.html">Community</a><a href="member.html">Member area</a></nav>
+            <div class="nav-actions"><a class="btn primary" href="member.html">Join DoBu</a><button class="btn menu-btn"
+                    id="menuBtn">Menu</button></div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <div class="eyebrow">Member area</div>
+                <h1>YOUR TRAINING, YOUR PLAN.</h1>
+                <p>Create a demo account, sign in and manage your preferred membership. Data stays in your browser for
+                    this student project.</p>
+            </div>
+        </section>
+        <section class="section alt">
+            <div class="container">
+                <div id="authBlock" class="card form-card">
+                    <div class="tabs"><button class="tab active" data-tab="register" type="button">Create
+                            account</button><button class="tab" data-tab="login" type="button">Sign in</button></div>
+                    <div id="authNotice" class="notice"></div>
+                    <form id="registerForm">
+                        <div class="field"><label for="name">Full name</label><input id="name" name="name" required
+                                autocomplete="name"></div>
+                        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email"
+                                required autocomplete="email"></div>
+                        <div class="field"><label for="password">Password</label><input id="password" name="password"
+                                type="password" required minlength="6" autocomplete="new-password"></div>
+                        <div class="field"><label for="plan">Membership preference</label><select id="plan" name="plan">
+                                <option>Basic — £25/month</option>
+                                <option>Intermediate — £35/month</option>
+                                <option>Advanced — £45/month</option>
+                                <option>Elite — £60/month</option>
+                                <option>Junior — £25/month</option>
+                            </select></div><button class="btn accent" type="submit">Create account</button>
+                    </form>
+                    <form id="loginForm" class="hidden">
+                        <div class="field"><label for="loginEmail">Email</label><input id="loginEmail" name="email"
+                                type="email" required></div>
+                        <div class="field"><label for="loginPassword">Password</label><input id="loginPassword"
+                                name="password" type="password" required></div><button class="btn primary"
+                            type="submit">Sign in</button>
+                    </form>
+                </div>
+                <div id="memberArea" class="hidden">
+                    <div class="grid">
+                        <div class="card"><span class="tag">Welcome back</span>
+                            <h2 id="memberName">Member</h2>
+                            <p id="memberEmail"></p>
+                        </div>
+                        <div class="card"><span class="tag">Current preference</span>
+                            <h3 id="memberPlan">Basic</h3>
+                            <p>This demo does not take payments. It shows how membership-management UI could work.</p>
+                        </div>
+                        <div class="card"><span class="tag">Account</span>
+                            <h3>Session controls</h3><button class="btn" id="logoutBtn">Sign out</button>
+                        </div>
+                    </div>
+                    <div class="card form-card" style="margin-top:20px">
+                        <h3>Change membership preference</h3>
+                        <form id="planForm">
+                            <div class="field"><label for="planSelect">Plan</label><select id="planSelect">
+                                    <option>Basic — £25/month</option>
+                                    <option>Intermediate — £35/month</option>
+                                    <option>Advanced — £45/month</option>
+                                    <option>Elite — £60/month</option>
+                                    <option>Junior — £25/month</option>
+                                </select></div><button class="btn accent" type="submit">Update preference</button>
+                            <div class="notice" id="planNotice"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="fine" style="margin-top:0">DoBu Martial Arts · Student website concept. Demo authentication uses
+                localStorage and is not suitable for production.</div>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
